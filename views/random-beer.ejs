@@ -1,0 +1,11 @@
+<div>
+    <% for( let index = 0; index < randomBeer.length; index +=1 ) { %>
+        <img src="<%= randomBeer[index].image_url %>" alt="beer image" style="height:200px">
+        <h3><%-randomBeer[index].name%></h3>
+        <article><%-randomBeer[index].description%></article>
+        <p><%-randomBeer[index].tagline%></p>
+        <p><%-randomBeer[index].food-pairing%></p>
+        <article><%-randomBeer[index].brewer-tips%></article>
+    <% } %>
+ </div>
+

@@ -1,0 +1,8 @@
+<div>
+<% for( let index = 0; index < first25.length; index +=1 ) { %>
+    <h3><%-first25[index].name%></h3>
+    <img src="<%= first25[index].image_url %>" alt="beer image" style="height:200px">
+    <p><%-first25[index].tagline%></p>
+    <article><%-first25[index].description%></article>
+<% } %>
+</div>
